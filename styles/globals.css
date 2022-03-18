@@ -4,6 +4,7 @@ body {
   margin: 0;
   font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen,
     Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
+  background: #f3f4f5;
 }
 
 a {
@@ -13,4 +14,15 @@ a {
 
 * {
   box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+
+.all__pages {
+  position: absolute;
+  top: 92px;
+  left: 320px;
+  padding: 35px 50px;
+  width: 83%;
+  z-index: -1;
 }

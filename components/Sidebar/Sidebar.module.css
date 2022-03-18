@@ -1,0 +1,39 @@
+.sidebar {
+    position: fixed;
+    top: 92px;
+    height: 100vh;
+    background: #27282A;
+    width: 319px;
+}
+
+ 
+
+
+.menu__link {
+    color: #dddada;
+    font-size: 20px;
+    padding: 12px;
+    display: flex;
+    gap: 10px;
+    border-radius: 10px;
+    margin: 0;
+
+}
+.menu__link:hover{
+    background-color: #454747;
+
+}
+.logout__btn{
+    width: 100%;
+    background: none;
+    padding: 10px;
+    outline: none;
+    color: white;
+    border: 1px solid #dee2e6;
+    border-radius: 30px;
+    font-size: 15px;
+    margin-top: 60px;
+    display: flex;
+    gap: 10px;
+    justify-content: center;
+}

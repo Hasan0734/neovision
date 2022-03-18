@@ -1,0 +1,12 @@
+.group__card{
+    border: 1px solid lightgray;
+    padding: 10px;
+    border-radius: 15px;
+}
+/* .group__card img{
+    width: 100%;
+} */
+.group__card p{
+    margin: 0;
+    text-transform: uppercase;
+}

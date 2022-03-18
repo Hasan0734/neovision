@@ -1,0 +1,10 @@
+.card__two{
+    background-color: #ffffff;
+    /* padding: 30px; */
+    border-radius: 12px;
+    box-shadow: -7px 6px 18px 7px #cdc9c980;
+    margin: 5px;
+    border: 1px solid rgb(236, 234, 234);
+    height: 100%;
+    
+}

@@ -1,0 +1,31 @@
+.card__p{
+    padding-top: 30px;
+    padding-left: 30px;
+    padding-right: 30px;
+}
+.device__tab{
+    padding: 14px;
+    padding-bottom: 20px;
+    cursor: pointer;
+}
+.active__tab{
+    padding: 14px;
+    padding-bottom: 20px;
+    border-bottom: 2px  solid blue;
+    position: relative;
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+    cursor: pointer;
+}
+.active__tab::before{
+    position: absolute;
+    content: "";
+    width: 20px;
+    height: 20px;
+    background-color: blue;
+    bottom: -19px;
+    transform: rotate(45deg);
+    overflow: hidden;
+   
+}
