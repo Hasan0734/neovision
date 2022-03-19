@@ -1,12 +1,10 @@
 .sidebar {
     position: fixed;
-    top: 92px;
-    height: 100vh;
+    top: 86px;
+    height: 100%;
     background: #27282A;
-    width: 319px;
+    width: 317px;
 }
-
- 
 
 
 .menu__link {
@@ -37,3 +35,12 @@
     gap: 10px;
     justify-content: center;
 }
+
+@media only screen and (max-width: 1200px) {
+    .sidebar{
+        width: 100px;
+    }
+    .title{
+        display: none;
+    }   
+  }

@@ -9,10 +9,10 @@ const DeviceManage = () => {
             <div className="all__pages">
               
                     <div className='row'>
-                        <div className="col-6">
+                        <div className="col-lg-6 col-12 mb-3 mb-lg-0">
                            <DeviceItem/>
                         </div>
-                        <div className="col-6">
+                        <div className="col-lg-6 col-12 mb-3 mb-lg-0">
                             <DeviceDetail/>
                         </div>
                     </div>

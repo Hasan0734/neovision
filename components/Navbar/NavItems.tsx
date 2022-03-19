@@ -3,7 +3,7 @@ const NavItems = () => {
     return (
         <div className="d-flex align-items-center">
             <ul className="d-flex justify-content-between list-unstyled m-0">
-                <li className={Classes.tab__btn}>
+                <li className={`${Classes.tab__btn} active__tab text-primary`}>
                     <i className="fa-solid fa-list"></i> List Type
                 </li>
                 <li className={Classes.tab__btn}>

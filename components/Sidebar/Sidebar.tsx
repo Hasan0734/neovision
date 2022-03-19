@@ -51,12 +51,11 @@ const Sidebar = () => {
                         {menuItem.map((item: any, i: number) => <li key={i} >
                             <Link href="/">
                                 <a className='text-white-50 text-decoration-none'>
-
                                     <p className={Classes.menu__link}>
                                         <span>
                                             {parse(item.icon)}
                                         </span>
-                                        {item.title}</p>
+                                        <span className={Classes.title}>{item.title}</span></p>
                                 </a>
                             </Link>
                         </li>)}

@@ -5,12 +5,12 @@
 }
 .device__tab{
     padding: 14px;
-    padding-bottom: 20px;
+    padding-bottom: 17px;
     cursor: pointer;
 }
 .active__tab{
     padding: 14px;
-    padding-bottom: 20px;
+    padding-bottom: 17px;
     border-bottom: 2px  solid blue;
     position: relative;
     overflow: hidden;

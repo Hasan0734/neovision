@@ -1,6 +1,36 @@
 import React from 'react';
 import GroupItemCard from '../GroupItemCard/GroupItemCard';
+import OpenCard from '../GroupItemCard/OpenCard';
 import Card from './../Card/Card';
+import primaryImg from '/public/image-1.png'
+const cardItem: { id: number, title: string, img:any }[] = [
+    {
+        id: 1,
+        title: 'Card title here',
+        img: {primaryImg}
+    },
+    {
+        id: 2,
+        title: 'Card title here',
+        img: {primaryImg}
+    },
+    {
+        id: 3,
+        title: 'Card title here',
+        img: {primaryImg}
+    },
+    {
+        id: 4,
+        title: 'Card title here',
+        img: {primaryImg}
+    },
+    {
+        id: 5,
+        title: 'Card title here',
+        img: {primaryImg}
+    },
+
+]
 
 const DeviceItem = () => {
     return (
@@ -14,31 +44,12 @@ const DeviceItem = () => {
             </div>
             <div className='py-4'>
                 <div className="row">
-                    <div className='col-4 p-2'>
-                        <GroupItemCard/>
+                   <div  className='col-4 p-2'>
+                        <OpenCard  />
                     </div>
-                    <div className='col-4 p-2'>
-                        <GroupItemCard/>
-                    </div>
-                    <div className='col-4 p-2'>
-                        <GroupItemCard/>
-                    </div>
-                    <div className='col-4 p-2'>
-                        <GroupItemCard/>
-                    </div>
-          
-                    <div className='col-4 p-2'>
-                        <GroupItemCard/>
-                    </div>
-          
-                    <div className='col-4 p-2'>
-                        <GroupItemCard/>
-                    </div>
-          
-                    <div className='col-4 p-2'>
-                        <GroupItemCard/>
-                    </div>
-          
+                   {cardItem.map((item, i) =>  <div  className='col-lg-4 col-md-6  p-2'>
+                        <GroupItemCard key={i} detail={item}/>
+                    </div>)}
                 </div>
             </div>
 

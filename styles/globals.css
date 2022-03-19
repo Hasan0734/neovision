@@ -23,6 +23,35 @@ a {
   top: 92px;
   left: 320px;
   padding: 35px 50px;
-  width: 83%;
+  width: 100%;
   z-index: -1;
+}
+               
+@media screen and (max-width: 1200px){
+  .all__pages {
+  
+    left: 90px;
+
+  }
+}
+.active__tab{
+  padding: 14px;
+  padding-bottom: 17px;
+  border-bottom: 2px  solid blue;
+  position: relative;
+  overflow: hidden;
+  display: flex;
+  justify-content: center;
+  cursor: pointer;
+}
+.active__tab::before{
+  position: absolute;
+  content: "";
+  width: 20px;
+  height: 20px;
+  background-color: blue;
+  bottom: -19px;
+  transform: rotate(45deg);
+  overflow: hidden;
+ 
 }
