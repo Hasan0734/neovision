@@ -23,7 +23,7 @@ a {
   top: 92px;
   left: 320px;
   padding: 35px 50px;
-  width: 100%;
+  width: 83%;
   z-index: -1;
 }
                
@@ -31,6 +31,7 @@ a {
   .all__pages {
   
     left: 90px;
+    width: 100%
 
   }
 }
@@ -54,4 +55,12 @@ a {
   transform: rotate(45deg);
   overflow: hidden;
  
+}
+.card__p{
+  padding-top: 30px;
+  padding-left: 30px;
+  padding-right: 30px;
+}
+.active__file{
+  border: 1px solid black !important;
 }

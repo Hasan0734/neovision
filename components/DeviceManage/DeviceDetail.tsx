@@ -1,5 +1,8 @@
 import Classes from './DeviceManage.module.css'
 import CardTwo from './../CardTwo/CardTwo';
+import Detail from './Detail/Detail';
+import DetailSave from './Detail/DetailSave';
+import AddDevice from '../AddDevice/AddDevice';
 const DeviceDetail = () => {
     return (
         <CardTwo>
@@ -7,8 +10,8 @@ const DeviceDetail = () => {
                 <div className="d-flex justify-content-between">
                     <h3>Device Details</h3>
                     <div className="d-flex gap-3">
-                        <button className="btn btn-outline-primary rounded-pill py-1">View-1</button>
-                        <button className="btn btn-primary rounded-pill py-1">View-2</button>
+                        <button className="btn btn-outline-primary rounded-pill px-4">View-1</button>
+                        <button className="btn btn-primary rounded-pill py-1 px-4">View-2</button>
                     </div>
                 </div>
             </div>
@@ -18,21 +21,9 @@ const DeviceDetail = () => {
                     <li className={Classes.device__tab}>Tab-2</li>
                     <li className={Classes.device__tab}>Tab-3</li>
                 </ul>
-
-                <div className={Classes.card__p}>
-                    <div className='d-flex mb-3'>
-                        <h5 className='w-25'>Item-1</h5>
-                        <p className='border m-0 w-75 rounded-pill p-2'>All &gt? Detail-1</p>
-                    </div>
-                    <div className='d-flex mb-3'>
-                        <h5 className='w-25'>Item-2</h5>
-                        <p className='border m-0 w-75 rounded-pill p-2'>Detail-1</p>
-                    </div>
-                    <div className='d-flex mb-3'>
-                        <h5 className='w-25'>Item-3</h5>
-                        <p className='border m-0 w-75 rounded-pill p-2'>Detail-1</p>
-                    </div>
-                </div>
+                {/* <Detail/> */}
+                {/* <DetailSave/> */}
+                <AddDevice/>
             </div>
 
 

@@ -8,37 +8,44 @@ const menuItem: any = [
     {
         id: 1,
         icon: '<i className="fa-solid fa-mobile-screen-button"></i>',
-        title: 'Menu-1'
+        title: 'Menu-1',
+        link: '/'
     },
     {
         id: 2,
         icon: '<i className="fa-solid fa-mobile-screen-button"></i>',
-        title: 'Menu-2'
+        title: 'Menu-2',
+        link: '/'
     },
     {
         id: 3,
         icon: '<i className="fa-solid fa-mobile-screen-button"></i>',
-        title: 'Menu-3'
+        title: 'Menu-3',
+        link: '/'
     },
     {
         id: 4,
         icon: '<i className="fa-solid fa-mobile-screen-button"></i>',
-        title: 'Menu-4'
+        title: 'Menu-4',
+        link: '/'
     },
     {
         id: 5,
-        icon: '<i className="fa-solid fa-mobile-screen-button"></i>',
-        title: 'Menu-4'
+        icon: '<i className="fa-regular fa-folder"></i>',
+        title: 'Media',
+        link: '/media-management'
     },
     {
         id: 6,
         icon: '<i className="fa-solid fa-mobile-screen-button"></i>',
-        title: 'Menu-4'
+        title: 'Menu-5',
+        link: '/'
     },
     {
         id: 7,
         icon: '<i className="fa-solid fa-mobile-screen-button"></i>',
-        title: 'Menu-4'
+        title: 'Menu-6',
+        link: '/'
     },
 ]
 const Sidebar = () => {
@@ -49,13 +56,19 @@ const Sidebar = () => {
                 <div>
                     <ul className='list-unstyled'>
                         {menuItem.map((item: any, i: number) => <li key={i} >
-                            <Link href="/">
+                            <Link href={`${item.link}`}>
                                 <a className='text-white-50 text-decoration-none'>
-                                    <p className={Classes.menu__link}>
-                                        <span>
-                                            {parse(item.icon)}
-                                        </span>
-                                        <span className={Classes.title}>{item.title}</span></p>
+                                    <div className={Classes.menu__link}>
+                                        <div>
+                                            <span>
+                                                {parse(item.icon)}
+                                            </span>
+                                            <span className={Classes.title}>{item.title}</span>
+                                        </div>
+                                        <span><i className="fa-solid fa-caret-right"></i></span>
+
+                                    </div>
+
                                 </a>
                             </Link>
                         </li>)}
