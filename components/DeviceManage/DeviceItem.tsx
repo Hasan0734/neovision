@@ -4,6 +4,7 @@ import GroupItemCard from '../GroupItemCard/GroupItemCard';
 import OpenCard from '../GroupItemCard/OpenCard';
 import Card from './../Card/Card';
 import primaryImg from '/public/image-1.png'
+import { useRouter } from 'next/router';
 const cardItem: { id: number, title: string, img:any }[] = [
     {
         id: 1,
@@ -34,6 +35,7 @@ const cardItem: { id: number, title: string, img:any }[] = [
 ]
 
 const DeviceItem = () => {
+    const {pathname} = useRouter()
     return (
         <Card>
             <div className='d-flex justify-content-between mb-4'>
@@ -43,7 +45,7 @@ const DeviceItem = () => {
                     <button className='rounded-pill btn btn-primary px-4'>Device Registration</button>
                 </div>
             </div>
-            <FileCategory/>
+           {pathname === '/media-management' &&  <FileCategory/>}
             <div className='py-4'>
                 <div className="row">
                    <div  className='col-4 p-2'>
