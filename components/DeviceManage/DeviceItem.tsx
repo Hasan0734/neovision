@@ -49,8 +49,8 @@ const DeviceItem = () => {
                    <div  className='col-4 p-2'>
                         <OpenCard  />
                     </div>
-                   {cardItem.map((item, i) =>  <div  className='col-lg-4 col-md-6  p-2'>
-                        <GroupItemCard key={i} detail={item}/>
+                   {cardItem.map((item, i) =>  <div key={i}  className='col-lg-4 col-md-6  p-2'>
+                        <GroupItemCard  detail={item}/>
                     </div>)}
                 </div>
             </div>

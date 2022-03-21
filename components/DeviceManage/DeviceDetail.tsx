@@ -3,10 +3,11 @@ import CardTwo from './../CardTwo/CardTwo';
 import Detail from './Detail/Detail';
 import DetailSave from './Detail/DetailSave';
 import AddDevice from '../AddDevice/AddDevice';
-const DeviceDetail = () => {
+const DeviceDetail = (props:any) => {
+    const children:any = props.children
     return (
         <CardTwo>
-            <div className={Classes.card__p}>
+            <div className="card__p">
                 <div className="d-flex justify-content-between">
                     <h3>Device Details</h3>
                     <div className="d-flex gap-3">
@@ -23,7 +24,7 @@ const DeviceDetail = () => {
                 </ul>
                 {/* <Detail/> */}
                 {/* <DetailSave/> */}
-                <AddDevice/>
+             {children}
             </div>
 
 
