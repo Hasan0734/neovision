@@ -1,0 +1,18 @@
+.table__area{
+    overflow-x: scroll;
+}
+
+
+.head__tr{
+    background: #f5f5f5;
+
+}
+.head__tr{
+    border-bottom: none;
+}
+/* .table__body tr{
+    border-bottom: ;
+} */
+/* .table__area::-webkit-scrollbar-thumb {
+    background: orange; 
+  } */

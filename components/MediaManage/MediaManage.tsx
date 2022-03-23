@@ -3,6 +3,7 @@ import AddDevice from '../AddDevice/AddDevice';
 import DeviceDetail from '../DeviceManage/DeviceDetail';
 import DeviceItem from '../DeviceManage/DeviceItem';
 import Layout from '../Layout/Layout';
+import AnotherInfo from './Information/AnotherInfo';
 import Information from './Information/Information';
 import MediaDetail from './MediaDetail/MediaDetail';
 
@@ -24,7 +25,7 @@ const MediaManage = () => {
                         <div className="mt-3">
 
                             <MediaDetail>
-                                <Information />
+                                <AnotherInfo/>
                             </MediaDetail>
                         </div>
                     </div>
