@@ -19,8 +19,14 @@ const MediaManage = () => {
                             <AddDevice/>
                         </DeviceDetail> */}
                         <MediaDetail>
-                            <Information/>
+                            <Information />
                         </MediaDetail>
+                        <div className="mt-3">
+
+                            <MediaDetail>
+                                <Information />
+                            </MediaDetail>
+                        </div>
                     </div>
                 </div>
             </div>
