@@ -72,15 +72,25 @@ const FullDetails = () => {
                         <tr className=''>
                             <td rowSpan={2} className={`${Class.td__title} border-end p-2`}></td>
                             <td className='p-2 border-end '>
-                                <span className='d-flex justify-content-between'>
+                                <div className='d-flex justify-content-between'>
                                     <span>Font color</span>
-                                    <span className={Class.select__color}> Yellow</span>
-                                    
-                                </span>
+
+                                    <div className='d-flex gap-2 align-items-center'>
+                                        <span className={Class.select__color} style={{background: 'Yellow'}}></span>
+                                       <span> Yellow</span>
+                                    </div>
+
+                                </div>
                             </td>
                             <td className='p-2 d-flex justify-content-between'>
                                 <span>Background Color</span>
-                                <span>Black</span>
+                                
+                                <div className='d-flex gap-2 align-items-center'>
+                                        <span className={Class.select__color} style={{background: 'Black'}}></span>
+                                       <span> Black</span>
+                                    </div>
+
+                                
                             </td>
                         </tr>
 
