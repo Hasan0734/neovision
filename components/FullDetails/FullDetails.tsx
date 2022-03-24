@@ -76,7 +76,7 @@ const FullDetails = () => {
                                     <span>Font color</span>
 
                                     <div className='d-flex gap-2 align-items-center'>
-                                        <span className={Class.select__color} style={{background: 'Yellow'}}></span>
+                                        <span className={Class.select__color} style={{background: `${'Yellow'}`}}></span>
                                        <span> Yellow</span>
                                     </div>
 
@@ -86,11 +86,9 @@ const FullDetails = () => {
                                 <span>Background Color</span>
                                 
                                 <div className='d-flex gap-2 align-items-center'>
-                                        <span className={Class.select__color} style={{background: 'Black'}}></span>
+                                        <span className={Class.select__color} style={{background: `${'Black'}`}}></span>
                                        <span> Black</span>
                                     </div>
-
-                                
                             </td>
                         </tr>
 

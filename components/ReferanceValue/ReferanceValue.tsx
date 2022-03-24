@@ -1,0 +1,27 @@
+import React from 'react';
+import EventsList from '../Events/EventsList/EventsList';
+import Layout from '../Layout/Layout';
+import EventDetailAdd from './../Events/EventDetailAdd/EventDetailAdd';
+import ReferanceDetails from './ReferanceDetails/ReferanceDetails';
+import ReferanceList from './ReferanceList/ReferanceList';
+
+const ReferanceValue = () => {
+    return (
+        <Layout>
+            <div className="all__pages">
+                <div className='row'>
+                    <div className="col-lg-6 col-12 mb-3 mb-lg-0">
+                      <ReferanceList/>
+                      
+                    </div>
+                    <div className="col-lg-6 col-12 mb-3 mb-lg-0">
+                       {/* <EventDetail/> */}
+                       <ReferanceDetails/>
+                    </div>
+                </div>
+            </div>
+        </Layout>
+    );
+};
+
+export default ReferanceValue;

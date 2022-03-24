@@ -45,7 +45,6 @@ const DeviceItem = () => {
                     <button className='rounded-pill btn btn-primary px-4'>Device Registration</button>
                 </div>
             </div>
-           {pathname === '/media-management' &&  <FileCategory/>}
             <div className='py-4'>
                 <div className="row">
                    <div  className='col-4 p-2'>

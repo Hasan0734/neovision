@@ -1,0 +1,6 @@
+.table__area{
+    overflow-x: scroll;
+}
+.table__area table{
+    font-size: 12px;
+}

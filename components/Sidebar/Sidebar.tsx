@@ -8,44 +8,44 @@ const menuItem: any = [
     {
         id: 1,
         icon: '<i className="fa-solid fa-mobile-screen-button"></i>',
-        title: 'Menu-1',
+        title: 'Device Management',
         link: '/'
     },
     {
         id: 2,
         icon: '<i className="fa-solid fa-mobile-screen-button"></i>',
-        title: 'Menu-2',
-        link: '/'
+        title: 'CD content management',
+        link: '/cd-content-management'
     },
     {
         id: 3,
         icon: '<i className="fa-solid fa-mobile-screen-button"></i>',
-        title: 'Menu-3',
-        link: '/'
+        title: 'Schedule management',
+        link: '/schedule-management'
     },
     {
         id: 4,
         icon: '<i className="fa-solid fa-mobile-screen-button"></i>',
-        title: 'Menu-4',
-        link: '/'
+        title: 'Kim event management',
+        link: '/kim-event-management'
     },
     {
         id: 5,
         icon: '<i className="fa-regular fa-folder"></i>',
-        title: 'Media',
+        title: 'Media Management',
         link: '/media-management'
     },
     {
         id: 6,
         icon: '<i className="fa-solid fa-mobile-screen-button"></i>',
-        title: 'Menu-5',
-        link: '/'
+        title: 'User Management',
+        link: '/user-management'
     },
     {
         id: 7,
         icon: '<i className="fa-solid fa-mobile-screen-button"></i>',
-        title: 'Menu-6',
-        link: '/'
+        title: 'System management',
+        link: '/system-management'
     },
 ]
 const Sidebar = () => {

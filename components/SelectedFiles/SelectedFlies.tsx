@@ -5,7 +5,7 @@ const tableData = [
         id: 1,
         thumb: 'img',
         fileName: 'Name Field',
-        route: 'All&gt;folder1&gt;folder2',
+        route: 'All>folder1>folder2',
         fileSize: '10kb',
         fileType: 'jpg',
         date: '2022-01-27 09:00'
@@ -14,7 +14,7 @@ const tableData = [
         id: 2,
         thumb: 'img',
         fileName: 'Name Field',
-        route: 'All&gt;folder1&gt;folder2',
+        route: 'All>folder1>folder2',
         fileSize: '10kb',
         fileType: 'jpg',
         date: '2022-01-27 09:00'
@@ -23,7 +23,7 @@ const tableData = [
         id: 3,
         thumb: 'img',
         fileName: 'Name Field',
-        route: 'All&gt;folder1&gt;folder2',
+        route: 'All>folder1>folder2',
         fileSize: '10kb',
         fileType: 'jpg',
         date: '2022-01-27 09:00'
@@ -36,7 +36,7 @@ const SelectedFlies = () => {
     return (
         <div className="card__p">
             <div className={`${Class.table__area} table-responsive`}>
-                <table className='table' style={{ fontSize: '14px' }}>
+                <table className='table' style={{ fontSize: '12px' }}>
                     <thead className=''>
                         <tr className={Class.head__tr}>
                             {tableHead.map((item, i) => <th key={i}>{item}</th>)}
