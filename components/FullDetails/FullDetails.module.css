@@ -2,3 +2,14 @@
     width: 163px;
     background: #f5f5f5 !important;
 }
+.select__color{
+    background-color: orange;
+}
+.select__color::before{
+    content: "";
+    position: absolute;
+    background-color: orange;
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+}
