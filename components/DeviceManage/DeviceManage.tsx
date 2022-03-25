@@ -16,8 +16,8 @@ const DeviceManage = () => {
                         </div>
                         <div className="col-lg-6 col-12 mb-3 mb-lg-0">
                             <DeviceDetail>
-                                {/* <Detail/> */}
-                                <SelectedFlies/>
+                                <Detail/>
+                                {/* <SelectedFlies/> */}
                                 {/* <FullDetails/> */}
                             </DeviceDetail>
                         </div>

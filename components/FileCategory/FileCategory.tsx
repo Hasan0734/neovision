@@ -6,7 +6,7 @@ import mov from '/public/icon//mov-file-64.png'
 import jepg from '/public/icon/jpeg-64.png'
 const FileCategory = () => {
     return (
-        <div className="d-flex justify-content-between">
+        <div className="d-flex justify-content-between my-4">
             <button className="btn border px-3 rounded-pill d-flex gap-1 text-secondary d-flex align-items-center">
                 <Image width={25} height={25}  src={pdf} />
                 PDF</button>

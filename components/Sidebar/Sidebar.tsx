@@ -19,13 +19,13 @@ const menuItem: any = [
     },
     {
         id: 3,
-        icon: '<i className="fa-solid fa-mobile-screen-button"></i>',
+        icon: '<i className="fa-regular fa-calendar-days"></i>',
         title: 'Schedule management',
         link: '/schedule-management'
     },
     {
         id: 4,
-        icon: '<i className="fa-solid fa-mobile-screen-button"></i>',
+        icon: '<i className="fa-solid fa-cake-candles"></i>',
         title: 'Kim event management',
         link: '/kim-event-management'
     },
@@ -37,7 +37,7 @@ const menuItem: any = [
     },
     {
         id: 6,
-        icon: '<i className="fa-solid fa-mobile-screen-button"></i>',
+        icon: '<i className="fa-regular fa-user"></i>',
         title: 'User Management',
         link: '/user-management'
     },
