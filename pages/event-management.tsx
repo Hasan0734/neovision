@@ -1,15 +1,16 @@
-import type { NextPage } from "next";
-import DeviceItem from "../components/DeviceManage/DeviceItem";
+import React from "react";
+import EventsList from "../components/Events/EventsList/EventsList";
 import Layout from "../components/Layout/Layout";
 import ListOfSelectedFile from "../components/ListOfSelectedFile/ListOfSelectedFile";
-const Home: NextPage = () => {
+
+const events = () => {
   return (
     <>
-      <Layout navTitle={"Device Management"}>
+      <Layout navTitle={"Event management"}>
         <div className="all__pages">
           <div className="row">
             <div className="col-lg-6 col-12 mb-3 mb-lg-0">
-              <DeviceItem />
+              <EventsList />
             </div>
             <div className="col-lg-6 col-12 mb-3 mb-lg-0">
               <ListOfSelectedFile />
@@ -21,4 +22,4 @@ const Home: NextPage = () => {
   );
 };
 
-export default Home;
+export default events;

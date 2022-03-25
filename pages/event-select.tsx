@@ -1,7 +1,7 @@
 import React from "react";
-import Layout from "../Layout/Layout";
-import ListOfSelectedFile from "../ListOfSelectedFile/ListOfSelectedFile";
-import EventsList from "./EventsList/EventsList";
+import EventsList from "../components/Events/EventsList/EventsList";
+import Layout from "../components/Layout/Layout";
+import ListOfSelectedFile from "../components/ListOfSelectedFile/ListOfSelectedFile";
 
 // import AnotherInfo from './Information/AnotherInfo';
 // import Information from './Information/Information';
@@ -15,16 +15,8 @@ const Events = () => {
         <div className="row">
           <div className="col-lg-6 col-12 mb-3 mb-lg-0">
             <EventsList />
-            {/* <AnotherDetail/> */}
           </div>
           <div className="col-lg-6 col-12 mb-3 mb-lg-0">
-            {/* <EventDetail/> */}
-            {/* <EventDetailAdd/> */}
-            {/* <MediaDetail> */}
-            {/* <Information /> */}
-            {/* <AnotherMediaDetail/> */}
-
-            {/* </MediaDetail> */}
             <ListOfSelectedFile />
           </div>
         </div>
