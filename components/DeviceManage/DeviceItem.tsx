@@ -6,41 +6,45 @@ import Card from './../Card/Card';
 import primaryImg from '/public/image-1.png'
 import { useRouter } from 'next/router';
 import Modals from '../Modal/Modal';
-const cardItem: { id: number, title: string, img:any }[] = [
+import EventModal from '../Events/EventModal/EventModal';
+const cardItem: { id: number, title: string, img: any }[] = [
     {
         id: 1,
         title: 'Card title here',
-        img: {primaryImg}
+        img: { primaryImg }
     },
     {
         id: 2,
         title: 'Card title here',
-        img: {primaryImg}
+        img: { primaryImg }
     },
     {
         id: 3,
         title: 'Card title here',
-        img: {primaryImg}
+        img: { primaryImg }
     },
     {
         id: 4,
         title: 'Card title here',
-        img: {primaryImg}
+        img: { primaryImg }
     },
     {
         id: 5,
         title: 'Card title here',
-        img: {primaryImg}
+        img: { primaryImg }
     },
 
 ]
 
 const DeviceItem = () => {
-    const {pathname} = useRouter()
+    const { pathname } = useRouter()
     const [isOpen, setIsOpen] = useState(false)
+    console.log(isOpen)
     return (
         <Card>
-            {isOpen && <Modals/>}
+            {isOpen && <Modals isOpens={isOpen} setIsOpen={setIsOpen}>
+                <EventModal/>
+            </Modals>}
             <div className='d-flex justify-content-between mb-4'>
                 <p>All <i className="fa-solid fa-angle-right"></i> <strong><span>Group-1</span></strong></p>
                 <div className='d-flex gap-3'>
@@ -50,11 +54,11 @@ const DeviceItem = () => {
             </div>
             <div className='py-4'>
                 <div className="row">
-                   <div  className='col-4 p-2'>
-                        <OpenCard  />
+                    <div className='col-4 p-2'>
+                        <OpenCard />
                     </div>
-                   {cardItem.map((item, i) =>  <div key={i}  className='col-lg-4 col-md-6  p-2'>
-                        <GroupItemCard  detail={item}/>
+                    {cardItem.map((item, i) => <div key={i} className='col-lg-4 col-md-6  p-2'>
+                        <GroupItemCard detail={item} />
                     </div>)}
                 </div>
             </div>

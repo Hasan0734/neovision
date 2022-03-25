@@ -1,18 +1,22 @@
-import React from 'react';
-import {  Modal, ModalBody, ModalHeader,  } from 'reactstrap';
+import React, {useState} from 'react';
+import { Modal, ModalBody, ModalHeader, } from 'reactstrap';
 
-const Modals = (props:any) => {
-    const children:any = props.children
+const Modals = (props: any) => {
+
+    const {isOpens, setIsOpen, children} = props
     return (
         <div>
-            
-            <Modal centered fullscreen="sm" isOpen size="lg"
-              toggle={function noRefCheck(){}}
-             >
+            <Modal
+                centered
+                fullscreen="lg"
+                size="lg"
+                isOpen={isOpens}
+                toggle={() => setIsOpen(false)}
+            >
                 <ModalBody>
                     {children}
                 </ModalBody>
-                
+               
             </Modal>
         </div>
     );

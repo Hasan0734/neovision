@@ -9,12 +9,12 @@ const AnotherMediaDetail = () => {
             <div className='d-flex mb-3 align-items-center'>
                 <h5 className='w-25'>Group Name <span className='text-danger'>*</span></h5>
                 {/* <p className='border m-0 w-75 rounded-pill p-2'></p> */}
-                <input className='border m-0 w-75 rounded-3 p-2' type="text" value="Neovision.pdf" />
+                <input className='border m-0 w-75 rounded-3 p-2' readOnly type="text" value="Neovision.pdf" />
 
             </div>
             <div className='d-flex mb-3 align-content-center'>
                 <h5 className='w-25'>Modified File</h5>
-                <input className='border m-0 w-75 rounded-3 p-2' type="text" value="Neovision_v2.pdf" />
+                <input className='border m-0 w-75 rounded-3 p-2' readOnly type="text" value="Neovision_v2.pdf" />
             </div>
             
             <div className='d-flex justify-content-center gap-3 mt-4'>

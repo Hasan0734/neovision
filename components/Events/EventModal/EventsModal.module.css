@@ -1,0 +1,36 @@
+.search__box{
+    border-radius: 38px;
+    padding: 10px 29px 10px 10px;
+    border: 1px solid lightgray;
+    width: 300px;
+    outline: none;
+}
+.search__box:focus{
+    outline: 1px solid lightgray;
+}
+.search__btn{
+    position: absolute;
+    right: 61px;
+    top: 11px;
+    border: none;
+    background: none;
+    font-size: 16px;
+    color: #808080c7;
+
+}
+.reset__btn{
+    background-color: transparent;
+    outline: none;
+    border: 1px solid lightgray;
+    font-size: 17px;
+    color: gray;
+    border-radius: 50%;
+    width: 43px;
+    height: 37px;
+
+}
+.pagination li a{
+    text-decoration: none;
+    font-size: 13px;
+    color: #9b9696;
+}
