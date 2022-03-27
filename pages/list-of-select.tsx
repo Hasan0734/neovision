@@ -1,8 +1,7 @@
 import type { NextPage } from "next";
-import DetailSave from "../components/DeviceManage/Detail/DetailSave";
-import DeviceDetail from "../components/DeviceManage/DeviceDetail";
 import DeviceItem from "../components/DeviceManage/DeviceItem";
 import Layout from "../components/Layout/Layout";
+import ListOfSelectedFile from "../components/ListOfSelectedFile/ListOfSelectedFile";
 const Home: NextPage = () => {
   return (
     <>
@@ -13,9 +12,7 @@ const Home: NextPage = () => {
               <DeviceItem />
             </div>
             <div className="col-lg-6 col-12 mb-3 mb-lg-0">
-              <DeviceDetail>
-                <DetailSave />
-              </DeviceDetail>
+              <ListOfSelectedFile />
             </div>
           </div>
         </div>

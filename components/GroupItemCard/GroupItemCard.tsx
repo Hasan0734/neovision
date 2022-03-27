@@ -7,10 +7,8 @@ const GroupItemCard = (props: any) => {
   const { pathname } = useRouter();
   return (
     <div className={Classes.group__card}>
-      {pathname === "/device-detail" ||
-        (pathname === "/device-detail-save" && (
-          <h5 className={Classes.card__title}>{title}</h5>
-        ))}
+      <h5 className={Classes.card__title}>{title}</h5>
+
       <Image
         className={`${Classes.card__img} w-100 rounded-3`}
         src={img}

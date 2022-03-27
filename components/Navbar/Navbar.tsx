@@ -11,7 +11,7 @@ const Navbar: NextPage = (props) => {
           <Image width={250} height={60} src={logo} alt="dkjfk" />
         </div>
         <div className="col-lg-7 col-md-6 col-6">
-          <SearchArea />
+          <SearchArea navData={props.navTitle} />
         </div>
         <div className="col-lg-3 col-md-4 d-none d-md-block">
           <NavItems />

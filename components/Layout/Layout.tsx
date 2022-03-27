@@ -5,7 +5,7 @@ const Layout = (props: any) => {
   const children: any = props.children;
   return (
     <>
-      <Navbar />
+      <Navbar navTitle={props.navTitle} />
       <div className="row">
         <div className="col-2">
           <Sidebar />

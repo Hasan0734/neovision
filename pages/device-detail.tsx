@@ -5,7 +5,7 @@ import Layout from "../components/Layout/Layout";
 
 const DeviceManage = () => {
   return (
-    <Layout>
+    <Layout navTitle={"Device Management"}>
       <div className="all__pages">
         <div className="row">
           <div className="col-lg-6 col-12 mb-3 mb-lg-0">
