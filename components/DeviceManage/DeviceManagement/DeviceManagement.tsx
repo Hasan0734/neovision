@@ -1,10 +1,10 @@
 import Image from "next/image";
 import CardTwo from "../../CardTwo/CardTwo";
-import Class from "./EventDetail.module.css";
+import Class from "./DeviceManagement.module.css";
 import image2 from "/public/image/1.png";
 import image3 from "/public/image/2.png";
 import image1 from "/public/image/7.png";
-const EventDetail = (props: any) => {
+const DeviceManagement = (props: any) => {
   return (
     <CardTwo>
       <div className="card__p">
@@ -12,16 +12,23 @@ const EventDetail = (props: any) => {
           <h3>Event Details</h3>
           <div className="d-flex gap-3">
             <button className="btn btn-outline-primary rounded-pill py-1 px-4">
-              Preview
+              Delete
             </button>
             <button className="btn btn-primary rounded-pill py-1 px-4">
-              Stripe
+              Correction
             </button>
             <button className="btn btn-primary rounded-pill py-1 px-4">
               Add
             </button>
           </div>
         </div>
+        <ul className="d-flex border-bottom gap-2 mt-3 list-unstyled">
+          <li className={Class.device__tab} style={{ marginLeft: "2rem" }}>
+            Basic Info
+          </li>
+          <li className={"active__tab"}>Schedule Info</li>
+          <li className={Class.device__tab}>Event Info</li>
+        </ul>
         <div className="mt-5">
           <div className="d-flex align-items-center mb-3">
             <h5 className="w-25 fs-6">Schedule Name</h5>
@@ -68,7 +75,6 @@ const EventDetail = (props: any) => {
               <Image src={image2} alt="img" />
               <Image src={image3} alt="img" />
               <Image src={image1} alt="img" />
-
             </div>
           </div>
           <div className="d-flex  mb-3">
@@ -78,8 +84,6 @@ const EventDetail = (props: any) => {
               <Image src={image2} alt="img" />
               <Image src={image3} alt="img" />
               <Image src={image1} alt="img" />
-
-              {/* <Image src={}/> */}
             </div>
           </div>
         </div>
@@ -88,4 +92,4 @@ const EventDetail = (props: any) => {
   );
 };
 
-export default EventDetail;
+export default DeviceManagement;

@@ -7,15 +7,11 @@ const ListOfSelectedFile = (props:any) => {
             <div className="card__p">
                 <div className="d-flex justify-content-between">
                     <h3>List of Selected Files</h3>
-                    
                 </div>
             </div>
             <div >
-                
              <SelectedFlies/>
             </div>
-
-
         </CardTwo>
     );
 };

@@ -2,7 +2,6 @@ import Card from "../../Card/Card";
 import EventTable from "../EventTable/EventTable";
 import Class from "./EventsList.module.css";
 const EventsList = (props: any) => {
-  console.log(props);
   return (
     <Card>
       <div className="d-flex justify-content-end gap-3 align-items-center mb-4"></div>

@@ -38,7 +38,6 @@ const cardItem: { id: number; title: string; img: any }[] = [
 const DeviceItem = (props: any) => {
   const { pathname } = useRouter();
   const [isOpen, setIsOpen] = useState(false);
-  console.log(isOpen);
   return (
     <Card>
       {isOpen && (
