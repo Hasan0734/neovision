@@ -1,6 +1,7 @@
-.table__area{
-    overflow-x: scroll;
+.table__area {
+    overflow-x: hidden;
 }
-.table__area table{
+
+.table__area table {
     font-size: 12px;
 }

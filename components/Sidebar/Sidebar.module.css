@@ -19,11 +19,13 @@
     justify-content: space-between;
 
 }
-.menu__link:hover{
+
+.menu__link:hover {
     background-color: #454747;
 
 }
-.logout__btn{
+
+.logout__btn {
     width: 100%;
     background: none;
     padding: 10px;
@@ -37,15 +39,18 @@
     gap: 10px;
     justify-content: center;
 }
-.title{
+
+.title {
     margin-left: 10px;
-}  
+}
 
 @media only screen and (max-width: 1200px) {
-    .sidebar{
+    .sidebar {
         width: 100px;
-    }
-    .title{
         display: none;
-    }   
-  }
+    }
+
+    .title {
+        display: none;
+    }
+}

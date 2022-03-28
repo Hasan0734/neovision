@@ -5,7 +5,7 @@ body {
   font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen,
     Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
   background: #f3f4f5;
-  color: #666666;
+  color: #666666 !important;
 }
 
 a {
@@ -31,7 +31,7 @@ a {
 @media screen and (max-width: 1200px) {
   .all__pages {
 
-    left: 90px;
+    left: 0;
     width: 100%
   }
 }

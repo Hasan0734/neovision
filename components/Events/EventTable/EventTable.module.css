@@ -1,6 +1,28 @@
 /* .table__area{
     overflow-x: scroll;
 } */
-.table__area table{
+.table__area table {
     font-size: 12px;
 }
+
+.table__area {
+    overflow-x: hidden;
+    overflow-y: hidden;
+}
+
+
+.head__tr {
+    background: #f5f5f5;
+
+}
+
+.head__tr {
+    border-bottom: none;
+}
+
+/* .table__body tr{
+    border-bottom: ;
+} */
+/* .table__area::-webkit-scrollbar-thumb {
+    background: orange; 
+  } */

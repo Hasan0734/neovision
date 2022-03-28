@@ -4,7 +4,6 @@ import FileCategory from "../../FileCategory/FileCategory";
 import CardItem from "./CardItem";
 
 const MediaItem = (props: any) => {
-  console.log(props);
   return (
     <Card>
       <div className="d-flex justify-content-between mb-4">
@@ -12,7 +11,10 @@ const MediaItem = (props: any) => {
           All <i className="fa-solid fa-angle-right"></i>
           <span>Folder1</span>
           <i className="fa-solid fa-angle-right"></i>
-          <span>Folder2</span>
+          <strong>
+            {" "}
+            <span>Folder2</span>
+          </strong>
         </p>
         <div className="d-flex gap-3">
           <button className="rounded-pill btn btn-outline-primary px-4">
@@ -23,9 +25,8 @@ const MediaItem = (props: any) => {
           </button>
         </div>
       </div>
-      <FileCategory />
-
-      <CardItem />
+      {props.isShow && <FileCategory />}
+      <CardItem cardDetail={props.cardDetail} />
       {/* <SelectedFlies/> */}
     </Card>
   );

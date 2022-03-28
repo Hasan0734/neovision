@@ -6,7 +6,7 @@ import MediaDetail from "../components/MediaManage/MediaDetail/MediaDetail";
 const Home: NextPage = () => {
   return (
     <>
-      <Layout navTitle={"Device Management"}>
+      <Layout navTitle={"Event Management"}>
         <div className="all__pages">
           <div className="row">
             <div className="col-lg-6 col-12 mb-3 mb-lg-0">

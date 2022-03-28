@@ -50,20 +50,22 @@ const SelectedFlies = () => {
           <thead className="">
             <tr className={Class.head__tr}>
               {tableHead.map((item, i) => (
-                <th key={i}>{item}</th>
+                <th className="text-center" key={i}>
+                  {item}
+                </th>
               ))}
             </tr>
           </thead>
           <tbody className={Class.table__body}>
             {tableData.map((item, i) => (
               <tr key={i}>
-                <td>{item.id}</td>
-                <td>{item.thumb}</td>
-                <td>{item.fileName}</td>
-                <td>{item.route}</td>
-                <td>{item.fileSize}</td>
-                <td>{item.fileType}</td>
-                <td>{item.date}</td>
+                <td className="text-center">{item.id}</td>
+                <td className="text-center">{item.thumb}</td>
+                <td className="text-center">{item.fileName}</td>
+                <td className="text-center">{item.route}</td>
+                <td className="text-center">{item.fileSize}</td>
+                <td className="text-center">{item.fileType}</td>
+                <td className="text-center">{item.date}</td>
               </tr>
             ))}
           </tbody>
