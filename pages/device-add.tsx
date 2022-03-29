@@ -14,7 +14,10 @@ const MediaManage = () => {
   });
 
   return (
-    <Layout tabActive={tabActive} navTitle={"Device Management"}>
+    <Layout
+      tabActive={tabActive}
+      navData={{ filter: false, title: "Device Management" }}
+    >
       <div className="all__pages">
         <div className="row">
           <div className="col-lg-6 col-12 mb-3 mb-lg-0">

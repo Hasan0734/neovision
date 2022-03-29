@@ -14,7 +14,10 @@ const Home: NextPage = () => {
     view: false,
   });
   return (
-    <Layout tabActive={tabActive} navTitle={"Media Management"}>
+    <Layout
+      tabActive={tabActive}
+      navData={{ filter: true, title: "Media Management" }}
+    >
       <div className="all__pages">
         <div className="row">
           <div className="col-lg-6 col-12 mb-3 mb-lg-0">

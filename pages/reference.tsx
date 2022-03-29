@@ -12,7 +12,10 @@ const Home: NextPage = () => {
   });
   return (
     <>
-      <Layout tabActive={tabActive} navTitle={"Standard Value Management"}>
+      <Layout
+        tabActive={tabActive}
+        navData={{ filter: false, title: "Standard Value Management" }}
+      >
         <div className="all__pages">
           <div className="row">
             <div className="col-lg-6 col-12 mb-3 mb-lg-0">

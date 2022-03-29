@@ -3,7 +3,6 @@ import Classes from "./Navbar.module.css";
 const NavItems = (props: any) => {
   const { pathname } = useRouter();
   const { list, cardType, view } = props.tabActive;
-  console.log(props);
   return (
     <div className="d-flex align-items-center">
       <ul className="d-flex justify-content-between list-unstyled m-0">

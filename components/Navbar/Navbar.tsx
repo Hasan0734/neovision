@@ -16,7 +16,7 @@ const Navbar: NextPage = (props) => {
           </Link>
         </div>
         <div className="col-lg-7 col-md-6 col-6">
-          <SearchArea navData={props.navTitle} />
+          <SearchArea navData={props.navData} />
         </div>
         <div className="col-lg-3 col-md-4 d-none d-md-block">
           <NavItems tabActive={props.tabActive} />

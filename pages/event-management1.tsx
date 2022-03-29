@@ -1,25 +1,25 @@
-import type { NextPage } from "next";
-import { useState } from "react";
-import DeviceItem from "../components/DeviceManage/DeviceItem";
+import React, { useState } from "react";
+import EventsList from "../components/Events/EventsList/EventsList";
 import Layout from "../components/Layout/Layout";
 import ListOfSelectedFile from "../components/ListOfSelectedFile/ListOfSelectedFile";
-const Home: NextPage = () => {
-  const [cardDetail, setCardDetail] = useState({ status: false, title: false });
+
+const events = () => {
   const [tabActive, setTabActive] = useState({
-    list: false,
-    cardType: true,
+    list: true,
+    cardType: false,
     view: false,
   });
+
   return (
     <>
       <Layout
         tabActive={tabActive}
-        navData={{ filter: true, title: "Device Management" }}
+        navData={{ filter: false, title: "Event Management" }}
       >
         <div className="all__pages">
           <div className="row">
             <div className="col-lg-6 col-12 mb-3 mb-lg-0">
-              <DeviceItem isShow={false} cardDetail={cardDetail} />
+              <EventsList />
             </div>
             <div className="col-lg-6 col-12 mb-3 mb-lg-0">
               <ListOfSelectedFile />
@@ -31,4 +31,4 @@ const Home: NextPage = () => {
   );
 };
 
-export default Home;
+export default events;
