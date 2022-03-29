@@ -1,15 +1,21 @@
 import type { NextPage } from "next";
+import { useState } from "react";
 import EventDetail from "../components/Events/EventDetail/EventDetail";
 import EventsList from "../components/Events/EventsList/EventsList";
 import Layout from "../components/Layout/Layout";
 const Home: NextPage = () => {
+  const [tabActive, setTabActive] = useState({
+    list: true,
+    cardType: false,
+    view: false,
+  });
   return (
     <>
-      <Layout navTitle={"Device Management"}>
+      <Layout tabActive={tabActive} navTitle={"Device Management"}>
         <div className="all__pages">
           <div className="row">
             <div className="col-lg-6 col-12 mb-3 mb-lg-0">
-              <EventsList />
+              <EventsList isShow={{ search: true, route: false }} />
             </div>
             <div className="col-lg-6 col-12 mb-3 mb-lg-0">
               <EventDetail />

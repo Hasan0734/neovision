@@ -5,9 +5,15 @@ import DeviceItem from "../components/DeviceManage/DeviceItem";
 import Layout from "../components/Layout/Layout";
 
 const DeviceManage = () => {
+  const [tabActive, setTabActive] = useState({
+    list: true,
+    cardType: false,
+    view: false,
+  });
+
   const [cardDetail, setCardDetail] = useState({ status: true, title: true });
   return (
-    <Layout navTitle={"Device Management"}>
+    <Layout tabActive={tabActive} navTitle={"Device Management"}>
       <div className="all__pages">
         <div className="row">
           <div className="col-lg-6 col-12 mb-3 mb-lg-0">

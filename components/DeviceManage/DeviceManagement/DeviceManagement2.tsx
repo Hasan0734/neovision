@@ -1,12 +1,21 @@
 import Image from "next/image";
+import { useState } from "react";
 import CardTwo from "../../CardTwo/CardTwo";
+import EventModal from "../../Events/EventModal/EventModal";
+import Modals from "../../Modal/Modal";
 import Class from "./DeviceManagement.module.css";
 import image2 from "/public/image/1.png";
 import image3 from "/public/image/2.png";
 import image1 from "/public/image/7.png";
-const DeviceManagement = (props: any) => {
+const DeviceManagement2 = (props: any) => {
+  const [isOpen, setIsOpen] = useState(false);
   return (
     <CardTwo>
+      {isOpen && (
+        <Modals isOpens={isOpen} setIsOpen={setIsOpen}>
+          <EventModal />
+        </Modals>
+      )}
       <div className="card__p">
         <div className="d-flex justify-content-between">
           <h3>Event Details</h3>
@@ -14,10 +23,10 @@ const DeviceManagement = (props: any) => {
             <button className="btn btn-outline-primary rounded-pill py-1 px-4">
               Delete
             </button>
-            <button className="btn btn-primary rounded-pill py-1 px-4">
-              Correction
-            </button>
-            <button className="btn btn-primary rounded-pill py-1 px-4">
+            <button
+              className="btn btn-primary rounded-pill py-1 px-4"
+              onClick={() => setIsOpen(true)}
+            >
               Add
             </button>
           </div>
@@ -26,11 +35,11 @@ const DeviceManagement = (props: any) => {
           <li className={Class.device__tab} style={{ marginLeft: "2rem" }}>
             Basic Info
           </li>
-          <li className={"active__tab"}>Schedule Info</li>
-          <li className={Class.device__tab}>Event Info</li>
+          <li className={Class.device__tab}>Schedule Info</li>
+          <li className={"active__tab"}>Event Info</li>
         </ul>
 
-        <div className=" d-flex mt-4">
+        <div className="d-flex mt-4">
           <span className="w-50 border p-2 d-flex justify-content-between align-items-center">
             Folder Name Schedule <i className="fa-solid fa-check"></i>
           </span>
@@ -79,7 +88,7 @@ const DeviceManagement = (props: any) => {
             </p>
           </div>
           <div className="d-flex  mb-3">
-            <h5 className=" fs-6" style={{ width: "34%" }}>
+            <h5 className="fs-6" style={{ width: "34%" }}>
               A
             </h5>
             <div className="border m-0 d-flex gap-2 w-75 rounded-3 p-3 w-100">
@@ -90,7 +99,7 @@ const DeviceManagement = (props: any) => {
             </div>
           </div>
           <div className="d-flex  mb-3">
-            <h5 className=" fs-6" style={{ width: "34%" }}>
+            <h5 className="fs-6" style={{ width: "34%" }}>
               B
             </h5>
             <div className="border m-0 d-flex gap-2 w-75 rounded-3 p-3  w-100">
@@ -106,4 +115,4 @@ const DeviceManagement = (props: any) => {
   );
 };
 
-export default DeviceManagement;
+export default DeviceManagement2;

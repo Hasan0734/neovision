@@ -19,7 +19,7 @@ const Navbar: NextPage = (props) => {
           <SearchArea navData={props.navTitle} />
         </div>
         <div className="col-lg-3 col-md-4 d-none d-md-block">
-          <NavItems />
+          <NavItems tabActive={props.tabActive} />
         </div>
       </div>
     </nav>

@@ -1,5 +1,5 @@
 import Classes from "./Navbar.module.css";
-const SearchArea = (props) => {
+const SearchArea = (props: any) => {
   return (
     <div className="py-3 d-flex justify-content-between w-100 align-items-center">
       <h3 className={`${Classes.nav__title}  d-none d-md-block`}>
